@@ -1,0 +1,42 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
