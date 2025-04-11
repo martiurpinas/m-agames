@@ -1,45 +1,90 @@
-/* Estilos generales */
 body {
-    background-color: #fff; /* Predomina el blanco sobre el gris anterior */
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    max-width: 800px;
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Barra de navegación */
-.navbar {
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
     margin-bottom: 30px;
 }
 
-/* Tarjetas */
-.card {
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Imágenes fuera de tarjetas */
-img {
-    margin-bottom: 20px;
-}
-
-/* Listas */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
+.hero h2 {
+    font-size: 2.5em;
     margin-bottom: 10px;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
