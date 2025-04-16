@@ -379,24 +379,24 @@ footer a:hover {
 }
 
 :root {
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary: #00aaff;
+  --primary-hover: #0088cc;
   --text: #f1f5f9;
   --text-light: #cbd5e1;
   --text-lighter: #94a3b8;
   --bg: #000000;
-  --card-bg: #000000;
+  --card-bg: #746f6f;
   --border: none;
   --border-dark: none;
   --border-radius: 12px;
   --shadow-sm: none;
   --shadow-md: none;
   --shadow-lg: none;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 0.3s ease-in-out;
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Segoe UI', system-ui, sans-serif;
   line-height: 1.6;
   color: var(--text);
   background-color: var(--bg);
@@ -416,9 +416,41 @@ body {
   border: none;
 }
 
-/* PIE DE PÁGINA AL ESTILO MINECRAFT */
+/* ENLACES */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* BOTONES */
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: bold;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+/* PIE DE PÁGINA */
 .footer-minecraft {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Segoe UI', system-ui, sans-serif;
   text-align: center;
   padding: 1.25rem 0;
   margin-top: auto;
@@ -451,7 +483,7 @@ body {
 }
 
 .footer-minecraft-enhanced {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Segoe UI', system-ui, sans-serif;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: auto;
