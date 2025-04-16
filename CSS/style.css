@@ -378,21 +378,20 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* ESTILOS BASE MEJORADOS */
 :root {
   --primary: #2563eb;
   --primary-hover: #1d4ed8;
-  --text: #1e293b;
-  --text-light: #64748b;
+  --text: #f1f5f9;
+  --text-light: #cbd5e1;
   --text-lighter: #94a3b8;
-  --bg: #f8fafc;
-  --card-bg: #ffffff;
-  --border: #c7ccd1;
-  --border-dark: #98b5d8;
+  --bg: #000000;
+  --card-bg: #000000;
+  --border: none;
+  --border-dark: none;
   --border-radius: 12px;
-  --shadow-sm: 0 1px 3px rgba(114, 99, 99, 0.1);
-  --shadow-md: 0 4px 6px rgba(107, 94, 94, 0.1);
-  --shadow-lg: 0 10px 15px rgba(107, 87, 87, 0.1);
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -403,18 +402,18 @@ body {
   background-color: var(--bg);
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
+  border: none;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* CONTENEDOR PRINCIPAL MEJORADO */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
   flex: 1;
+  border: none;
 }
 
 /* PIE DE PÁGINA AL ESTILO MINECRAFT */
@@ -424,7 +423,7 @@ body {
   padding: 1.25rem 0;
   margin-top: auto;
   background-color: var(--card-bg);
-  border-top: 1px solid var(--border-dark);
+  border: none;
   font-size: 0.8125rem;
   color: var(--text-light);
 }
@@ -432,6 +431,7 @@ body {
 .footer-minecraft-content {
   max-width: 600px;
   margin: 0 auto;
+  border: none;
 }
 
 .footer-minecraft-copyright {
@@ -439,6 +439,7 @@ body {
   margin-bottom: 0.25rem;
   font-weight: 500;
   color: var(--text);
+  border: none;
 }
 
 .footer-minecraft-rights {
@@ -446,9 +447,9 @@ body {
   font-size: 0.75rem;
   color: var(--text-lighter);
   line-height: 1.5;
+  border: none;
 }
 
-/* Versión mejorada con efectos */
 .footer-minecraft-enhanced {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   text-align: center;
@@ -456,19 +457,11 @@ body {
   margin-top: auto;
   background-color: var(--card-bg);
   position: relative;
+  border: none;
 }
 
 .footer-minecraft-enhanced::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(to right, 
-    transparent, 
-    var(--border-dark), 
-    transparent);
+  content: none;
 }
 
 .footer-minecraft-enhanced .footer-minecraft-copyright {
@@ -477,24 +470,13 @@ body {
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text);
+  border: none;
 }
 
 .footer-minecraft-enhanced .footer-minecraft-rights {
   display: block;
   font-size: 0.75rem;
   color: var(--text-lighter);
-  letter-spacing: 0.01em;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .footer-minecraft,
-  .footer-minecraft-enhanced {
-    padding: 1rem 1.5rem;
-  }
-  
-  .footer-minecraft .footer-minecraft-rights,
-  .footer-minecraft-enhanced .footer-minecraft-rights {
-    font-size: 0.6875rem;
-  }
+  line-height: 1.5;
+  border: none;
 }
