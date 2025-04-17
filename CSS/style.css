@@ -385,40 +385,93 @@ footer a:hover {
   --text-light: #e0e0e0;
   --text-lighter: #b0b0b0;
   --bg: #121212; /* Fondo general (gris oscuro) */
-  --card-bg: #1e1e1e; /* Fondo de tarjetas (opcional) */
-  --footer-bg: #000000; /* SOLO el pie de página en negro */
+  --card-bg: #1e1e1e; /* Fondo de tarjetas */
+  --footer-bg: #000000; /* SOLO el pie de página en negro puro */
   --border: none;
   --border-radius: 0;
   --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --transition: all 0.3s ease-in-out;
 }
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
   color: var(--text);
-  background-color: var(--bg); /* Fondo general (no negro) */
+  background-color: var(--bg); /* Fondo gris oscuro (no negro) */
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Contenedor principal (no negro) */
+/* Contenedor principal (transparente o hereda --bg) */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  background-color: transparent; /* Sin fondo o coincide con --bg */
+  flex: 1;
+  background-color: transparent;
 }
 
-/* Pie de página (NEGRO, como en la imagen) */
+/* 🔥 FOOTER NEGRO (como en tu imagen) */
 .footer-minecraft,
 .footer-minecraft-enhanced {
-  background-color: var(--footer-bg); /* Fondo negro SOLO aquí */
+  background-color: var(--footer-bg); /* Negro puro */
   color: var(--text);
   text-align: center;
   padding: 1.5rem 0;
+  margin-top: auto; /* Lo pega abajo si hay poco contenido */
   width: 100%;
   border: none;
 }
 
-/* Resto de estilos (botones, enlaces, etc.) se mantienen igual */
-a { color: var(--primary); }
-button { background-color: var(--primary); }
+/* Estilos del texto del footer (opcional) */
+.footer-minecraft-copyright,
+.footer-minecraft-enhanced .footer-minecraft-copyright {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.footer-minecraft-rights,
+.footer-minecraft-enhanced .footer-minecraft-rights {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Estilos base (botones/enlaces) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: bold;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
