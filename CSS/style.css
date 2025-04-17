@@ -378,14 +378,14 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
-:root {
+:root { 
   --primary: #00aaff;
   --primary-hover: #0088cc;
   --text: #ffffff; /* Blanco total */
   --text-light: #e0e0e0;
   --text-lighter: #b0b0b0;
-  --bg: #000000;
-  --card-bg: #000000; /* Fondo de footer: negro */
+  --bg: #000000; /* Fondo completamente negro */
+  --card-bg: #000000; /* Fondo negro también en tarjetas y footer */
   --border: none;
   --border-dark: none;
   --border-radius: 0; /* Sin bordes redondeados */
@@ -408,11 +408,13 @@ body {
   min-height: 100vh;
 }
 
+/* CONTENEDOR PRINCIPAL */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
   flex: 1;
+  background-color: var(--bg);
   border: none;
 }
 
@@ -436,7 +438,7 @@ input[type="submit"] {
   color: var(--bg);
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0;
+  border-radius: var(--border-radius);
   cursor: pointer;
   transition: var(--transition);
   font-weight: bold;
@@ -451,22 +453,22 @@ input[type="submit"]:hover {
 /* PIE DE PÁGINA */
 .footer-minecraft,
 .footer-minecraft-enhanced {
-  background-color: var(--card-bg); /* fondo negro */
-  color: var(--text); /* texto blanco */
+  background-color: var(--card-bg);
+  color: var(--text);
   text-align: center;
   padding: 1.5rem 0;
   margin-top: auto;
   width: 100%;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
   font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 .footer-minecraft-content {
   max-width: 600px;
   margin: 0 auto;
-  border: none;
+  border: var(--border);
 }
 
 .footer-minecraft-copyright,
@@ -476,7 +478,7 @@ input[type="submit"]:hover {
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text);
-  border: none;
+  border: var(--border);
 }
 
 .footer-minecraft-rights,
@@ -485,7 +487,7 @@ input[type="submit"]:hover {
   font-size: 0.75rem;
   color: var(--text-light);
   line-height: 1.5;
-  border: none;
+  border: var(--border);
 }
 
 /* Elimina decoraciones extra */
