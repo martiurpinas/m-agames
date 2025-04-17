@@ -378,97 +378,42 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
-:root {  
-  --primary: #00aaff;
-  --primary-hover: #0088cc;
-  --text: #ffffff; /* Texto blanco */
-  --text-light: #e0e0e0;
-  --text-lighter: #b0b0b0;
-  --bg: #121212; /* Fondo general (gris oscuro) */
-  --card-bg: #1e1e1e; /* Fondo de tarjetas */
-  --footer-bg: #000000; /* ¡NEGRO PURO para el footer como en tu imagen! */
-  --border: none;
-  --border-radius: 0;
-  --shadow-sm: none;
-  --shadow-md: none;
-  --shadow-lg: none;
-  --transition: all 0.3s ease-in-out;
+/* ===== FOOTER COMO LA IMAGEN (NEGRO PURO, TEXTO BLANCO) ===== */
+:root {
+  --footer-bg: #000000; /* Negro como el alma de un troll de foro */
+  --footer-text: #ffffff; /* Blanco puro, como la nieve de Skyrim */
 }
 
-/* Estructura principal */
-body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  line-height: 1.6;
-  color: var(--text);
-  background-color: var(--bg); /* Fondo gris oscuro (no negro) */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  flex: 1;
-  background-color: transparent;
-}
-
-.footer-minecraft, 
-.footer-minecraft-enhanced {
-  background-color: var(--footer-bg); /* Fondo negro puro */
-  color: var(--text-light);
+footer {
+  background-color: var(--footer-bg) !important; /* ¡Negro sí o sí! */
+  color: var(--footer-text) !important;
   text-align: center;
-  padding: 20px;
-  margin: 40px auto 0 auto;
+  padding: 15px 0; /* Ajuste fino del espaciado */
   width: 100%;
-  max-width: 1000px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  transition: var(--transition);
-}
-
-.footer-minecraft-copyright {
-  display: block;
-  font-size: 13px;
   margin: 0;
+  border: 0;
+  position: relative;
+  box-shadow: none;
+  font-family: Arial, sans-serif; /* Tipografía simple como en la imagen */
+  line-height: 1.4;
 }
 
-.footer-minecraft-rights,
-.footer-minecraft-enhanced .footer-minecraft-rights {
+.footer-content {
+  max-width: 100%; /* Ocupa todo el ancho */
+  margin: 0 auto;
+  font-size: 14px; /* Tamaño exacto como en la referencia */
+}
+
+.footer-copyright {
   display: block;
-  font-size: 0.75rem;
-  color: var(--text-light);
-  margin-top: 0.25rem;
+  margin: 0;
+  font-weight: normal;
 }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-a:hover {
-  color: var(--primary-hover);
-  text-decoration: underline;
-}
-
-button,
-input[type="button"],
-input[type="submit"] {
-  background-color: var(--primary);
-  color: var(--bg);
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  transition: var(--transition);
-  font-weight: bold;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover {
-  background-color: var(--primary-hover);
+.footer-rights {
+  display: block;
+  color: var(--footer-text);
+  opacity: 0.8; /* Gris muy suave (casi blanco) */
+  font-size: 12px; /* Un pelín más pequeño */
+  margin-top: 4px; /* Espaciado fino entre líneas */
 }
