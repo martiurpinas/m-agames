@@ -378,39 +378,47 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* ===== FOOTER COMPACTO (ALTO REDUCIDO) ===== */
+/* ===== FOOTER NEGRO EXPANDIDO (COMO LA IMAGEN) ===== */
 :root {
-  --footer-bg: #000000; /* Fondo negro puro */
-  --footer-text: #ffffff; /* Texto blanco */
+  --footer-bg: #000000; /* Negro absoluto */
+  --footer-text: #ffffff; /* Blanco puro */
 }
 
 footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
+  background-color: var(--footer-bg) !important;
+  color: var(--footer-text) !important;
   text-align: center;
-  padding: 5px 0; /* Padding mínimo para reducir altura */
-  width: 100%; /* Ocupa todo el ancho */
+  padding: 10px 0; /* Reduje el padding vertical para más compacto */
+  width: 100vw; /* Ocupa el 100% del ancho de la pantalla (expandido) */
   margin: 0;
   border: 0;
+  box-shadow: none;
   font-family: Arial, sans-serif;
-  line-height: 1.2; /* Texto compacto */
-  font-size: 12px; /* Tamaño estándar */
+  line-height: 1.3; /* Más compacto */
+  position: relative;
+  left: 50%; /* Centrado forzado */
+  right: 50%; /* Centrado forzado */
+  margin-left: -50vw; /* Compensa el desplazamiento */
+  margin-right: -50vw; /* Compensa el desplazamiento */
 }
 
 .footer-content {
-  max-width: 100%;
+  max-width: 100%; /* Sin límite de ancho */
   margin: 0 auto;
+  font-size: 12px; /* Texto más pequeño */
+  padding: 0 20px; /* Espacio interno a los lados */
 }
 
 .footer-copyright {
   display: block;
   margin: 0;
+  font-weight: normal;
 }
 
 .footer-rights {
   display: block;
   color: var(--footer-text);
-  opacity: 0.7; /* Gris suave para los derechos */
-  font-size: 10px; /* Texto más pequeño */
+  opacity: 0.7; /* Gris más claro */
+  font-size: 10px; /* Más pequeño que el copyright */
   margin-top: 2px; /* Espaciado mínimo */
 }
