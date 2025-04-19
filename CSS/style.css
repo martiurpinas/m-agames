@@ -379,37 +379,30 @@ footer a:hover {
 }
 
 footer {
-  background-color: #212121; /* Un gris oscuro similar al de la imagen */
-  color: #f0f0f0; /* Un gris claro para el texto */
+  background: #000;
+  color: white;
   text-align: center;
-  height: 10px !important; /* Altura muy pequeña */
-  min-height: 10px !important;
-  padding: 0 !important;
+  height: 12px !important;     /* Altura fija mínima */
+  min-height: 12px !important; /* Obligatorio para algunos navegadores */
+  padding: 0 !important;       /* Elimina todo padding */
   width: 100%;
   margin: 0;
-  font: 9px/1 "Minecraft", monospace; /* Fuente estilo Minecraft y tamaño reducido */
-  overflow: hidden;
+  font: 8px/1 Arial, sans-serif; /* Texto supercompacto */
+  overflow: hidden;           /* Oculta cualquier desbordamiento */
   display: flex;
-  align-items: center;
+  align-items: center;        /* Centra verticalmente el texto */
   justify-content: center;
 }
 
-.footer-copyright {
-  display: inline;
+.footer-copyright, 
+.footer-rights {
+  display: inline;            /* Texto en línea (más compacto) */
   margin: 0;
   padding: 0;
 }
 
 .footer-rights {
-  display: inline;
-  font-size: 8px;
-  opacity: 0.8; /* Un poco más de visibilidad */
-  margin-left: 5px; /* Ligero espacio */
-}
-
-@font-face {
-  font-family: "Minecraft";
-  src: url("./Videojuego2.html") format("truetype"); /* Reemplaza con la ruta real de la fuente */
-  font-weight: normal;
-  font-style: normal;
+  font-size: 7px;
+  opacity: 0.7;
+  margin-left: 4px;          /* Pequeño espacio entre textos */
 }
