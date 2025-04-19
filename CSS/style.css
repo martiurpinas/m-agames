@@ -378,8 +378,33 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
- /* Minecraft-style footer */
- .minecraft-footer {
+ /* Reset para eliminar márgenes por defecto */
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor de la ecuación matemática */
+.math-container {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Estilo de la ecuación matemática */
+.math-equation {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Pie de página estilo Minecraft - ancho completo */
+.minecraft-footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 12px 0;
@@ -387,8 +412,11 @@ footer a:hover {
   color: #555;
   background-color: #f5f5f5;
   border-top: 1px solid #e0e0e0;
-  margin-top: 30px;
-  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .minecraft-copyright {
@@ -400,13 +428,4 @@ footer a:hover {
   display: block;
   font-size: 12px;
   color: #777;
-}
-
-/* Math equation styling */
-.math-equation {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 24px;
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px;
 }
