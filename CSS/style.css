@@ -378,31 +378,35 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
-footer {
-  background: #000;
-  color: white;
+ /* Minecraft-style footer */
+ .minecraft-footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  height: 12px !important;     /* Altura fija mínima */
-  min-height: 12px !important; /* Obligatorio para algunos navegadores */
-  padding: 0 !important;       /* Elimina todo padding */
-  width: 100%;
-  margin: 0;
-  font: 8px/1 Arial, sans-serif; /* Texto supercompacto */
-  overflow: hidden;           /* Oculta cualquier desbordamiento */
-  display: flex;
-  align-items: center;        /* Centra verticalmente el texto */
-  justify-content: center;
+  padding: 12px 0;
+  font-size: 13px;
+  color: #555;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 30px;
+  line-height: 1.4;
 }
 
-.footer-copyright, 
-.footer-rights {
-  display: inline;            /* Texto en línea (más compacto) */
-  margin: 0;
-  padding: 0;
+.minecraft-copyright {
+  display: block;
+  margin-bottom: 4px;
 }
 
-.footer-rights {
-  font-size: 7px;
-  opacity: 0.7;
-  margin-left: 4px;          /* Pequeño espacio entre textos */
+.minecraft-rights {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Math equation styling */
+.math-equation {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
 }
