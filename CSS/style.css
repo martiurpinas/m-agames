@@ -379,30 +379,38 @@ footer a:hover {
 }
 
 footer {
-  background: #000;
-  color: white;
+  background-color: #212121; /* Gris oscuro */
+  color: #f0f0f0; /* Gris claro */
   text-align: center;
-  height: 12px !important;     /* Altura fija mínima */
-  min-height: 12px !important; /* Obligatorio para algunos navegadores */
-  padding: 0 !important;       /* Elimina todo padding */
+  height: auto !important; /* Ajuste automático de altura */
+  min-height: 12px !important; /* Altura mínima */
+  padding: 2px 0 !important; /* Padding vertical */
   width: 100%;
   margin: 0;
-  font: 8px/1 Arial, sans-serif; /* Texto supercompacto */
-  overflow: hidden;           /* Oculta cualquier desbordamiento */
+  font: bold 9px/1 "Minecraft", monospace; /* Negrita, tamaño, interlineado y fuentes */
+  overflow: hidden;
   display: flex;
-  align-items: center;        /* Centra verticalmente el texto */
+  align-items: center;
   justify-content: center;
+  white-space: nowrap; /* Evita saltos de línea */
 }
 
-.footer-copyright, 
-.footer-rights {
-  display: inline;            /* Texto en línea (más compacto) */
+.footer-copyright {
+  display: inline;
   margin: 0;
   padding: 0;
 }
 
 .footer-rights {
-  font-size: 7px;
-  opacity: 0.7;
-  margin-left: 4px;          /* Pequeño espacio entre textos */
+  display: inline;
+  font-size: 8px;
+  opacity: 0.8;
+  margin-left: 3px; /* Espacio entre textos */
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("ruta/a/tu/fuente/Minecraft-Regular.ttf") format("truetype"); /* ¡REEMPLAZA CON TU RUTA! */
+  font-weight: normal;
+  font-style: normal;
 }
