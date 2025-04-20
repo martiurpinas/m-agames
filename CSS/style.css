@@ -378,51 +378,81 @@ footer a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* MINIMAL CSS FOR GTA FOOTER & EQUATION */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+:root {
+  --primary: #00aaff;
+  --primary-hover: #0088cc;
+  --text: #ffffff;
+  --text-light: #cccccc;
+  --text-lighter: #999999;
+  --bg: #121212;
+  --card-bg: #1e1e1e;
+  --footer-bg: #000000;
+  --border-radius: 0;
+  --transition: all 0.3s ease-in-out;
 }
 
-/* MINIMAL CSS FOR GTA FOOTER & EQUATION */
-body, html {
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.math-container {
-  width: 100%;
-  padding: 1px 0;
-  text-align: center;
-  font: 14px 'Times New Roman';
+.container {
+  flex: 1;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
+  background: transparent;
 }
 
-.gta-footer {
-  width: 100%;
-  padding: 2px 0;
-  background: #f5f5f5;
-  border-top: 0.5px solid #e0e0e0;
+/* Footer super limpio */
+.footer-minecraft,
+.footer-minecraft-enhanced {
+  background-color: var(--footer-bg); /* negro puro */
+  color: var(--text-light);
   text-align: center;
-  font-size: 8px;
-  color: #555;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  padding: 30px 20px;
+  margin-top: auto;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  transition: var(--transition);
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
 }
 
-.copyright-line {
+/* Copyright / Derechos */
+.footer-minecraft-copyright {
   display: block;
-  line-height: 1;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  color: var(--text-lighter);
 }
 
-.legal-line {
+/* Segunda línea más pequeña */
+.footer-minecraft-rights,
+.footer-minecraft-enhanced .footer-minecraft-rights {
   display: block;
-  font-size: 7px;
-  color: #777;
-  line-height: 1;
+  font-size: 0.7rem;
+  color: var(--text-lighter);
+  margin-top: 4px;
+}
+
+/* Enlaces */
+.footer-minecraft a,
+.footer-minecraft-enhanced a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-minecraft a:hover,
+.footer-minecraft-enhanced a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }
