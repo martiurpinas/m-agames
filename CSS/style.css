@@ -386,7 +386,7 @@ footer a:hover {
   --text-lighter: #999999;
   --bg: #121212;
   --card-bg: #1e1e1e;
-  --footer-bg: #000000; /* Fondo negro para el footer */
+  --footer-bg: #000000; /* Fondo negro puro */
   --border-radius: 0;
   --transition: all 0.3s ease-in-out;
 }
@@ -410,13 +410,13 @@ body {
   background: transparent;
 }
 
-/* Footer con estructura idéntica y fondo negro */
+/* Footer con fondo negro */
 .footer-minecraft,
 .footer-minecraft-enhanced {
-  background-color: var(--footer-bg); /* Negro puro */
+  background-color: var(--footer-bg); /* Aplicando el negro puro */
   color: var(--text-light);
   text-align: center;
-  padding: 30px 20px; /* Manteniendo padding original */
+  padding: 30px 20px;
   margin-top: auto;
   width: 100%;
   border-radius: 0;
@@ -424,10 +424,8 @@ body {
   transition: var(--transition);
   font-size: 0.9rem;
   letter-spacing: 0.3px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil añadido */
 }
 
-/* Copyright - Estructura idéntica */
 .footer-minecraft-copyright {
   display: block;
   margin-bottom: 5px;
@@ -435,7 +433,6 @@ body {
   color: var(--text-lighter);
 }
 
-/* Derechos - Estructura idéntica */
 .footer-minecraft-rights,
 .footer-minecraft-enhanced .footer-minecraft-rights {
   display: block;
@@ -444,7 +441,6 @@ body {
   margin-top: 4px;
 }
 
-/* Enlaces - Estructura idéntica */
 .footer-minecraft a,
 .footer-minecraft-enhanced a {
   color: var(--primary);
