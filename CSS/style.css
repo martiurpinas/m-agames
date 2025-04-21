@@ -381,79 +381,79 @@ footer a:hover {
 :root {
   --primary: #00aaff;
   --primary-hover: #0088cc;
-  --text: #fff;
-  --text-light: #ccc;
-  --text-lighter: #999;
-  --bg: #121212;
-  --card-bg: #1e1e1e;
-  --footer-bg: #000;
-  --transition: all 0.3s ease;
+  --text: #ffffff;
+  --text-light: #cccccc;
+  --text-lighter: #999999;
+  --bg: #121212; /* Mantenemos el fondo original del body */
+  --card-bg: #1e1e1e; /* Mantenemos el color original del container */
+  --footer-bg: #000000; /* Solo el footer será negro */
+  --border-radius: 0;
+  --transition: all 0.3s ease-in-out;
 }
 
-/* Reset moderno y optimizado */
+/* Body mantiene su color original (#121212) */
 body {
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg);
   color: var(--text);
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
+  min-height: 100vh;
 }
 
-/* Contenedor principal mejorado */
+/* Container mantiene su color original (#1e1e1e) */
 .container {
   flex: 1;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  background: var(--card-bg);
 }
 
-/* Footer ultra optimizado */
-.footer {
-  background: var(--footer-bg);
+/* SOLO EL FOOTER CON FONDO NEGRO */
+.footer-minecraft,
+.footer-minecraft-enhanced {
+  background-color: var(--footer-bg); /* #000000 solo aquí */
   color: var(--text-light);
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 30px 20px;
   margin-top: auto;
   width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  transition: var(--transition);
   font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.3px;
+  border: none; /* Eliminamos bordes para mejor contraste */
 }
 
-.footer__copyright {
+/* Mantenemos el resto exactamente igual */
+.footer-minecraft-copyright {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
   font-size: 0.85rem;
   color: var(--text-lighter);
 }
 
-.footer__rights {
+.footer-minecraft-rights,
+.footer-minecraft-enhanced .footer-minecraft-rights {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-lighter);
-  opacity: 0.9;
+  margin-top: 4px;
 }
 
-.footer__link {
+.footer-minecraft a,
+.footer-minecraft-enhanced a {
   color: var(--primary);
   text-decoration: none;
   transition: var(--transition);
 }
 
-.footer__link:hover,
-.footer__link:focus {
+.footer-minecraft a:hover,
+.footer-minecraft-enhanced a:hover {
   color: var(--primary-hover);
   text-decoration: underline;
-  outline: none;
-}
-
-/* Mejoras de rendimiento */
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --transition: none;
-  }
 }
