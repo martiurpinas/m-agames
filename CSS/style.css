@@ -381,75 +381,79 @@ footer a:hover {
 :root {
   --primary: #00aaff;
   --primary-hover: #0088cc;
-  --text: #ffffff;
-  --text-light: #cccccc;
-  --text-lighter: #999999;
+  --text: #fff;
+  --text-light: #ccc;
+  --text-lighter: #999;
   --bg: #121212;
   --card-bg: #1e1e1e;
-  --footer-bg: #000000; /* Fondo negro puro */
-  --border-radius: 0;
-  --transition: all 0.3s ease-in-out;
+  --footer-bg: #000;
+  --transition: all 0.3s ease;
 }
 
+/* Reset moderno y optimizado */
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  background-color: var(--bg);
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
   color: var(--text);
   margin: 0;
-  padding: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  line-height: 1.5;
 }
 
+/* Contenedor principal mejorado */
 .container {
   flex: 1;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-  background: transparent;
 }
 
-/* Footer con fondo negro */
-.footer-minecraft,
-.footer-minecraft-enhanced {
-  background-color: var(--footer-bg); /* Aplicando el negro puro */
+/* Footer ultra optimizado */
+.footer {
+  background: var(--footer-bg);
   color: var(--text-light);
   text-align: center;
-  padding: 30px 20px;
+  padding: 1.5rem 1rem;
   margin-top: auto;
   width: 100%;
-  border-radius: 0;
-  box-shadow: none;
-  transition: var(--transition);
   font-size: 0.9rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.02em;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer-minecraft-copyright {
+.footer__copyright {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-size: 0.85rem;
   color: var(--text-lighter);
 }
 
-.footer-minecraft-rights,
-.footer-minecraft-enhanced .footer-minecraft-rights {
+.footer__rights {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--text-lighter);
-  margin-top: 4px;
+  opacity: 0.9;
 }
 
-.footer-minecraft a,
-.footer-minecraft-enhanced a {
+.footer__link {
   color: var(--primary);
   text-decoration: none;
   transition: var(--transition);
 }
 
-.footer-minecraft a:hover,
-.footer-minecraft-enhanced a:hover {
+.footer__link:hover,
+.footer__link:focus {
   color: var(--primary-hover);
   text-decoration: underline;
+  outline: none;
+}
+
+/* Mejoras de rendimiento */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: none;
+  }
 }
