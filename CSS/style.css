@@ -567,3 +567,175 @@ footer a:hover,
   z-index: 1;
 }
 
+/* Estilo inspirado en The Witcher 3: Wild Hunt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MedievalSharp', 'Times New Roman', serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #d4af37;
+  background-image: url('https://images.unsplash.com/photo-1518709766630-a6a7f45921c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 0.85);
+  min-height: 100vh;
+  border-left: 1px solid #d4af37;
+  border-right: 1px solid #d4af37;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #d4af37;
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #b8860b;
+  margin: 20px 0;
+  border-bottom: 1px solid #b8860b;
+  padding-bottom: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.nav-menu a:hover {
+  border-bottom: 1px solid #d4af37;
+  text-shadow: 0 0 5px #d4af37;
+}
+
+.character-card {
+  display: flex;
+  margin: 30px 0;
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 1px solid #d4af37;
+}
+
+.character-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.character-info {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.character-name {
+  color: #b8860b;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.gameplay-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.gameplay-card {
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 1px solid #d4af37;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.gameplay-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.gameplay-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 2px solid #d4af37;
+}
+
+.signature {
+  font-style: italic;
+  color: #b8860b;
+}
+
+.medallion {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Witcher_medallion.png/1200px-Witcher_medallion.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 5px #d4af37);
+}
+
+@media (max-width: 768px) {
+  .character-card {
+      flex-direction: column;
+  }
+  
+  .character-image {
+      width: 100%;
+      height: auto;
+  }
+  
+  .gameplay-section {
+      grid-template-columns: 1fr;
+  }
+  
+  .nav-menu {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .nav-menu li {
+      margin: 5px 0;
+  }
+}
