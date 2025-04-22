@@ -536,95 +536,149 @@ footer a:hover,
     background-color: #bd9075;
 }
 
-body {
-  background-color: #0f0f0f; /* Fondo oscuro típico de gameplays */
-  font-family: 'Roboto', 'Arial', sans-serif;
-  color: #ffffff;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Evita scroll horizontal no deseado */
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #121212; /* Fondo oscuro para mejor contraste */
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Contenedor principal ultra ancho */
 .container {
-  max-width: 1400px; /* Ancho máximo muy amplio */
+  width: 98vw; /* Ocupa casi todo el ancho de la ventana */
+  max-width: 2000px; /* Límite máximo muy amplio */
   margin: 0 auto;
-  padding: 20px 40px; /* Más padding en los lados */
+  padding: 2rem 3rem; /* Espaciado generoso en los lados */
 }
 
+/* Cabecera expansiva */
 .header {
   text-align: center;
-  margin-bottom: 30px;
-  padding: 20px 0;
-  border-bottom: 2px solid #ff0000; /* Línea roja estilo YouTube */
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #FF0000;
+  background: linear-gradient(90deg, rgba(20,20,20,0) 0%, rgba(255,0,0,0.2) 50%, rgba(20,20,20,0) 100%);
 }
 
 .title {
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Efecto neon rojo */
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  color: #aaaaaa;
-  margin-top: 10px;
+  font-size: 1.8rem;
+  color: #AAAAAA;
+  font-weight: 300;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+/* Contenido principal ultra ancho */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   width: 100%;
 }
 
 .gameplay-section {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 30px;
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 3rem 4rem;
   width: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.youtube-button {
-  display: inline-block;
-  background-color: #ff0000;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.youtube-button:hover {
-  background-color: #cc0000;
-  transform: scale(1.05);
-}
-
-.footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  color: #777777;
-  font-size: 0.9rem;
-}
-
-/* Efectos especiales para texto del gameplay */
 .gameplay-text {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin: 15px 0;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  text-align: center;
 }
 
 .highlight {
-  color: #ff5555;
-  font-weight: bold;
+  color: #FF5555;
+  font-weight: 700;
+  font-size: 2.2rem;
 }
 
+/* Botones YouTube gigantes */
+.youtube-btn {
+  display: inline-block;
+  background: #FF0000;
+  color: white;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+.youtube-btn:hover {
+  background: #CC0000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6);
+}
+
+/* Footer ancho */
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #777;
+  border-top: 1px solid #333;
+}
+
+/* Efectos especiales */
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.pulse-effect {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .container {
+      padding: 2rem;
+  }
+  .title {
+      font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 1.5rem;
+  }
+  .title {
+      font-size: 2.2rem;
+  }
+  .gameplay-text {
+      font-size: 1.4rem;
+  }
+}
 .copyright-notice a:hover {
   color: #0d5bba; /* Azul un poco más oscuro al pasar el mouse */
 }
