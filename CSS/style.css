@@ -381,20 +381,33 @@ footer a:hover {
 :root {
   --primary: #00aaff;
   --primary-hover: #0088cc;
-  --text: #000000; /* Texto negro */
-  --text-light: #333333; /* Texto más oscuro */
-  --text-lighter: #666666; /* Texto gris oscuro */
-  --bg: #ffffff; /* Fondo blanco para el body */
-  --card-bg: #f5f5f5; /* Fondo gris claro para container */
-  --footer-bg: #000000; /* Fondo negro solo para el footer */
+  --text: #000000;
+  --text-light: #333333;
+  --text-lighter: #666666;
+  --bg: #ffffff;
+  --card-bg: #f5f5f5;
+  --footer-bg: #000000; /* Fondo negro para todo el footer */
+  --border-radius: 0;
+  --transition: all 0.3s ease-in-out;
+}
+
+:root {
+  --primary: #00aaff;
+  --primary-hover: #0088cc;
+  --text: #000000;
+  --text-light: #333333;
+  --text-lighter: #666666;
+  --bg: #ffffff;
+  --card-bg: #f5f5f5;
+  --footer-bg: #000000; /* Fondo negro para todo el footer */
   --border-radius: 0;
   --transition: all 0.3s ease-in-out;
 }
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background-color: var(--bg); /* Fondo blanco */
-  color: var(--text); /* Texto negro */
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
   padding: 0;
   display: flex;
@@ -407,14 +420,15 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-  background: var(--card-bg); /* Fondo gris claro */
+  background: var(--card-bg);
 }
 
-/* Footer con fondo negro y texto claro */
+/* Footer principal */
+footer,
 .footer-minecraft,
 .footer-minecraft-enhanced {
   background-color: var(--footer-bg); /* Negro puro */
-  color: #ffffff; /* Texto blanco forzado */
+  color: #000000; /* Texto negro */
   text-align: center;
   padding: 30px 20px;
   margin-top: auto;
@@ -427,30 +441,31 @@ body {
   border: none;
 }
 
-/* Texto del footer en blanco */
+/* Texto extra del footer */
 .footer-minecraft-copyright {
   display: block;
   margin-bottom: 5px;
   font-size: 0.85rem;
-  color: #cccccc; /* Gris claro */
+  color: #000000; /* Negro */
 }
 
-.footer-minecraft-rights,
-.footer-minecraft-enhanced .footer-minecraft-rights {
+.footer-minecraft-rights {
   display: block;
   font-size: 0.7rem;
-  color: #999999; /* Gris medio */
+  color: #000000; /* Negro */
   margin-top: 4px;
 }
 
-/* Enlaces en azul claro */
+/* Enlaces en negro */
+footer a,
 .footer-minecraft a,
 .footer-minecraft-enhanced a {
-  color: var(--primary);
+  color: #000000;
   text-decoration: none;
   transition: var(--transition);
 }
 
+footer a:hover,
 .footer-minecraft a:hover,
 .footer-minecraft-enhanced a:hover {
   color: var(--primary-hover);
