@@ -473,65 +473,65 @@ footer a:hover,
 }
 
 .card {
-  width: 100%;
-  max-width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-family: 'Segoe UI', sans-serif;
-  margin: 20px auto;
-  background-color: #fff;
-  transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 20px auto;
+    background-color: #fff;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .card h2 {
-  font-size: 1.4em;
-  margin: 15px;
-  color: #2c3e50;
-  text-align: center;
+    font-size: 1.4em;
+    margin: 15px;
+    color: #2c3e50;
+    text-align: center;
 }
 
 .video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* Relació 16:9 */
-  height: 0;
-  overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%; /* Relació 16:9 */
+    height: 0;
+    overflow: hidden;
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .card-body {
-  padding: 15px;
-  text-align: center;
-  background-color: #f5f5f5;
+    padding: 15px;
+    text-align: center;
+    background-color: #f5f5f5;
 }
 
 .card-body p {
-  margin-bottom: 10px;
-  color: #555;
+    margin-bottom: 10px;
+    color: #555;
 }
 
 .video-link {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #c4302b;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #c4302b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 .video-link:hover {
-  background-color: #a32020;
+    background-color: #a32020;
 }
