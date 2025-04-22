@@ -536,22 +536,93 @@ footer a:hover,
     background-color: #bd9075;
 }
 
-/* Estilo para el título de la página */
-.title {
-  color: #222; /* Gris muy oscuro en lugar de negro */
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  letter-spacing: -0.5px;
-  font-family: 'Roboto', Arial, sans-serif;
+body {
+  background-color: #0f0f0f; /* Fondo oscuro típico de gameplays */
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll horizontal no deseado */
 }
 
-/* Versión más suave para el título */
-.title-soft {
-  color: #444; /* Gris oscuro más suave */
-  font-weight: 500;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+.container {
+  max-width: 1400px; /* Ancho máximo muy amplio */
+  margin: 0 auto;
+  padding: 20px 40px; /* Más padding en los lados */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 2px solid #ff0000; /* Línea roja estilo YouTube */
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Efecto neon rojo */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #aaaaaa;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.gameplay-section {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.youtube-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #777777;
+  font-size: 0.9rem;
+}
+
+/* Efectos especiales para texto del gameplay */
+.gameplay-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.highlight {
+  color: #ff5555;
+  font-weight: bold;
 }
 
 .copyright-notice a:hover {
