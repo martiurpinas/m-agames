@@ -569,144 +569,144 @@ footer a:hover,
 
 /* Estilo de Super Mario Bros */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body {
-  background-color: #5b9bd5;
-  color: #fff;
-  background-image: 
-      linear-gradient(to bottom, #5b9bd5, #8bc34a 20%, #5b9bd5);
-  background-attachment: fixed;
+    background-color: #5b9bd5;
+    color: #fff;
+    background-image: 
+        linear-gradient(to bottom, #5b9bd5, #8bc34a 20%, #5b9bd5);
+    background-attachment: fixed;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .mario-header {
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .logo {
-  max-width: 400px;
-  margin: 20px auto;
-  filter: drop-shadow(3px 3px 0 #e52521) drop-shadow(-3px -3px 0 #fbd000);
+    max-width: 400px;
+    margin: 20px auto;
+    filter: drop-shadow(3px 3px 0 #e52521) drop-shadow(-3px -3px 0 #fbd000);
 }
 
 .header-bricks {
-  height: 30px;
-  background: 
-      linear-gradient(to right, #e52521 25%, #fbd000 25%, #fbd000 50%, 
-      #e52521 50%, #e52521 75%, #fbd000 75%);
-  background-size: 80px 30px;
-  margin-top: -10px;
+    height: 30px;
+    background: 
+        linear-gradient(to right, #e52521 25%, #fbd000 25%, #fbd000 50%, 
+        #e52521 50%, #e52521 75%, #fbd000 75%);
+    background-size: 80px 30px;
+    margin-top: -10px;
 }
 
 .mario-nav {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 
 .mario-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
-  gap: 15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .nav-button {
-  background-color: #e52521;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 30px;
-  border: 4px solid #fff;
-  box-shadow: 0 5px 0 #8a1a1a;
-  transition: all 0.2s;
-  display: inline-block;
+    background-color: #e52521;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 0 #8a1a1a;
+    transition: all 0.2s;
+    display: inline-block;
 }
 
 .nav-button:hover {
-  background-color: #fbd000;
-  transform: translateY(2px);
-  box-shadow: 0 3px 0 #8a1a1a;
-  color: #000;
+    background-color: #fbd000;
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #8a1a1a;
+    color: #000;
 }
 
 .mario-section {
-  margin: 40px 0;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  border: 4px dashed #fff;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 4px dashed #fff;
 }
 
 .mario-section h2 {
-  margin-bottom: 20px;
-  color: #fbd000;
-  text-shadow: 3px 3px 0 #e52521;
-  font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fbd000;
+    text-shadow: 3px 3px 0 #e52521;
+    font-size: 1.5rem;
 }
 
 .content-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 8px;
-  color: #333;
-  line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    line-height: 1.6;
 }
 
 .float-left {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  max-width: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 150px;
 }
 
 .characters-grid, .powerups-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .character-card, .powerup-card {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  color: #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
 .character-card:hover, .powerup-card:hover {
-  transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
 }
 
 .character-card img {
-  width: 100%;
-  max-height: 150px;
-  object-fit: contain;
-  margin-bottom: 10px;
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .character-card h3, .powerup-card h3 {
-  color: #e52521;
-  margin: 10px 0;
+    color: #e52521;
+    margin: 10px 0;
 }
 
 .powerup-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .mushroom { border-top: 5px solid #e52521; }
@@ -715,62 +715,62 @@ body {
 .feather { border-top: 5px solid #795548; }
 
 .mario-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
-  position: relative;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
 }
 
 .pipe {
-  width: 80px;
-  height: 60px;
-  background-color: #4caf50;
-  margin: 0 auto 20px;
-  border-radius: 0 0 40px 40px;
-  position: relative;
+    width: 80px;
+    height: 60px;
+    background-color: #4caf50;
+    margin: 0 auto 20px;
+    border-radius: 0 0 40px 40px;
+    position: relative;
 }
 
 .pipe:before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background-color: #4caf50;
-  border-radius: 40px 40px 0 0;
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 40px 40px 0 0;
 }
 
 .coin-animation {
-  font-size: 2rem;
-  margin-top: 10px;
-  animation: spin 1s linear infinite;
+    font-size: 2rem;
+    margin-top: 10px;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: scale(1) rotate(0deg); }
-  50% { transform: scale(1.2) rotate(180deg); }
-  100% { transform: scale(1) rotate(360deg); }
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.2) rotate(180deg); }
+    100% { transform: scale(1) rotate(360deg); }
 }
 
 @media (max-width: 768px) {
-  .logo {
-      max-width: 250px;
-  }
-  
-  .mario-nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .nav-button {
-      padding: 8px 15px;
-      font-size: 0.8rem;
-  }
-  
-  .float-left {
-      float: none;
-      display: block;
-      margin: 0 auto 15px;
-  }
+    .logo {
+        max-width: 250px;
+    }
+    
+    .mario-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+    
+    .float-left {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
 }
