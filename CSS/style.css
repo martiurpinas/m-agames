@@ -536,45 +536,39 @@ footer a:hover,
     background-color: #bd9075;
 }
 
-.footer {
-  width: 90%;
-  margin: 40px auto;
+body {
+  background-color: #f5f5f5; /* Fondo gris muy claro */
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #333333; /* Gris oscuro en lugar de negro puro */
+  margin: 0;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.copyright-notice {
   text-align: center;
-  font-size: 14px;
-  color: #1a1a1a;
-  background: linear-gradient(90deg, rgba(240,240,250,0.8), rgba(255,255,255,0.8));
-  border-radius: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  overflow: hidden;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 600px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+  border: 1px solid #eeeeee; /* Borde sutil */
 }
 
-/* Parte del borde en diagonal */
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 100%;
-  background: inherit;
-  transform: skewY(-3deg);
-  transform-origin: top left;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  z-index: 1;
+.copyright-notice a {
+  color: #1a73e8; /* Azul suave para enlaces */
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-/* Estilo de Super Mario Bros */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Press Start 2P', cursive;
+.copyright-notice a:hover {
+  color: #0d5bba; /* Azul un poco más oscuro al pasar el mouse */
 }
-
 body {
     background-color: #5b9bd5;
     color: #fff;
