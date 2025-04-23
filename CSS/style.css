@@ -559,22 +559,22 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  position: relative;
+  font-family: Arial, sans-serif;
+  /* Espacio extra para que el footer quede más abajo */
+  padding-bottom: 80px;
+  box-sizing: border-box;
 }
 
-.copyright-footer {
+.fixed-footer {
   position: fixed;
-  bottom: 0;
+  bottom: 20px; /* 20px desde el fondo en lugar de 0 */
   left: 0;
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  font-family: 'Arial', sans-serif;
   font-size: 12px;
   color: #000;
   background-color: transparent;
-  box-shadow: none;
-  border-top: none;
   margin: 0;
 }
 
