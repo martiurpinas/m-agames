@@ -536,58 +536,27 @@ footer a:hover,
     background-color: #bd9075;
 }
 
-/* === CSS MODERNO PARA TU FOOTER (2025) === */
-:root {
-  --color-primario: #222;
-  --color-secundario: #555;
-  --color-destacado: #e74c3c; /* Rojo Rockstar */
-}
-
+/* Estilo exacto para el footer de la imagen */
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  position: relative;
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer-legal {
+.copyright-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 12px 0;
-  background: #f8f8f8;
-  border-top: 1px solid #e1e1e1;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.03);
+  padding: 8px 0;
+  font-size: 12px;
+  color: #333333;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
 }
 
-.footer-text {
-  font-size: 0.78rem;
-  color: var(--color-secundario);
-  letter-spacing: 0.3px;
-  margin: 0;
-}
 
-.gta-brand {
-  color: var(--color-destacado);
-  font-weight: 600;
-}
 
-/* Efecto minimalista al pasar el mouse */
-.gta-brand:hover {
-  text-decoration: underline;
-  cursor: default;
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 600px) {
-  .footer-text {
-    font-size: 0.7rem;
-    padding: 0 15px;
-    line-height: 1.4;
-  }
-}
 /* TÍTULO (DORADO CON BORDE ROJO - SIN NEGRO) */
 .title {
   font-size: 5rem;
