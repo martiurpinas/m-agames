@@ -544,8 +544,6 @@ body {
 }
 
 .copyright-footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   text-align: center;
   padding: 8px 0;
@@ -554,7 +552,6 @@ body {
   background-color: #ffffff;
   border-top: 1px solid #e0e0e0;
 }
-
 body {
   margin: 0;
   padding: 0;
