@@ -536,30 +536,38 @@ footer a:hover,
     background-color: #bd9075;
 }
 
-/* RESET SIN NEGRO */
-* {
+body {
+  background-color: #f0f0f0; /* Fondo gris claro */
+  font-family: Arial, sans-serif;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* FONDO Y TIPOGRAFÍA */
-body {
-  background: #1a1a1a; /* Gris oscuro (NO es #000000) */
-  font-family: 'Bebas Neue', sans-serif;
-  color: #ffffff;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+}
+
+.footer {
   text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.container {
-  padding: 2rem;
+.copyright {
+  margin-bottom: 5px;
 }
 
+.trademark {
+  font-style: italic;
+  color: #999;
+}
 /* TÍTULO (DORADO CON BORDE ROJO - SIN NEGRO) */
 .title {
   font-size: 5rem;
