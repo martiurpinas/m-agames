@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft - El juego de construcción definitivo</title>
+    <title>Pac-Man | Top Videojuegos</title>
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="minecraft-bg">
-<nav class="navbar navbar-expand-lg navbar-dark">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Top Videojuegos</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html"> Pagina Principal</a>
+                    <a class="nav-link" href="./index.html">Página Principal</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./Videojuego01.html">Videojuego 1</a>
@@ -34,6 +33,107 @@
                 </li>
             </ul>
         </div>
-        
+    </nav>
+
+    <div class="game-header text-center">
+        <div class="container">
+            <h1 class="game-title">PAC-MAN</h1>
+            <p class="developer-info">Namco | 1980</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Pac-man.png/220px-Pac-man.png" class="img-fluid rounded mb-4" alt="Pac-Man Cover">
+                
+                <h2 class="section-title">Descripción</h2>
+                <p>Pac-Man es un videojuego de arcade desarrollado por Namco y lanzado en 1980. El jugador controla a Pac-Man, un personaje amarillo que debe comer todos los puntos en un laberinto mientras evita a cuatro fantasmas: Blinky, Pinky, Inky y Clyde. El juego se ha convertido en uno de los más icónicos de la historia de los videojuegos.</p>
+                
+                <h2 class="section-title mt-5">Características principales</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Juego de arcade clásico con mecánicas simples pero adictivas</li>
+                    <li class="list-group-item">Laberinto con puntos y power pellets</li>
+                    <li class="list-group-item">Cuatro fantasmas con diferentes patrones de movimiento</li>
+                    <li class="list-group-item">Sistema de puntuación basado en puntos comidos</li>
+                    <li class="list-group-item">Música y efectos de sonido icónicos</li>
+                </ul>
+
+                <h2 class="section-title mt-5">Personajes principales</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Pac-man.png/220px-Pac-man.png" class="card-img-top" alt="Pac-Man">
+                            <div class="card-body">
+                                <h5 class="card-title">Pac-Man</h5>
+                                <p class="card-text">El protagonista amarillo que debe comer todos los puntos del laberinto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Blinky.png/220px-Blinky.png" class="card-img-top" alt="Blinky">
+                            <div class="card-body">
+                                <h5 class="card-title">Blinky</h5>
+                                <p class="card-text">El fantasma rojo que persigue directamente a Pac-Man.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Pinky.png/220px-Pinky.png" class="card-img-top" alt="Pinky">
+                            <div class="card-body">
+                                <h5 class="card-title">Pinky</h5>
+                                <p class="card-text">El fantasma rosa que intenta interceptar a Pac-Man.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">Datos técnicos</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <tr>
+                                <th>Género:</th>
+                                <td>Arcade, Laberinto</td>
+                            </tr>
+                            <tr>
+                                <th>Plataformas:</th>
+                                <td>Arcade, Atari 2600, NES, Game Boy, PC, Móviles</td>
+                            </tr>
+                            <tr>
+                                <th>Modos:</th>
+                                <td>Un jugador</td>
+                            </tr>
+                            <tr>
+                                <th>Clasificación:</th>
+                                <td>E (Para todos)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <h2>Gameplay de Pac-Man</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/CTzNKSouWfM" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <footer class="copyright-footer">
+        <p>© 2023 Top Videojuegos. Todos los derechos sobre Pac-Man pertenecen a Bandai Namco.</p>
+    </footer>
 </body>
 </html>
