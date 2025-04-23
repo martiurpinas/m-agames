@@ -536,37 +536,63 @@ footer a:hover,
     background-color: #bd9075;
 }
 
-body {
-  background-color: #f0f0f0; /* Fondo gris claro */
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-  padding: 20px;
-  border-top: 1px solid #ddd;
+/* Estilo para el contenedor principal */
+.video-info {
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  background-color: white;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
 }
 
-.copyright {
-  margin-bottom: 5px;
+/* Título del video */
+.video-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
 }
 
-.trademark {
-  font-style: italic;
-  color: #999;
+/* Descripción del video */
+.video-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el botón de YouTube */
+.youtube-button {
+  display: inline-flex;
+  align-items: center;
+  background: #FF0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.youtube-button:hover {
+  background: #CC0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el emoji */
+.youtube-emoji {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+/* Efecto para el texto "Modo Historia" */
+.highlight {
+  color: #FF4500;
+  font-weight: bold;
 }
 /* TÍTULO (DORADO CON BORDE ROJO - SIN NEGRO) */
 .title {
